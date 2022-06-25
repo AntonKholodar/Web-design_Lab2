@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Main page</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light   " style=" background-color: rgb(4, 215, 4);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">AnimeTracker</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Signin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./personal_page.html">Personal Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutme.html">About</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" onclick="Add()" class="btn btn-dark">Add Anime Title</button>
+      </div>
+    </div>
+    </div>
+  </nav>
+ 
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="../img/naruto.jpg"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Naruto - S1E5</h5>
+          <p class="card-text">Зупинився на 06:35.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col1" id="set">
+      <div class="card">
+        <img src="../img/initial.jpg"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Initial D - S1E2</h5>
+          <p class="card-text">Майже кінець сезону, перегляд в Діскорді з другом</p>
+        </div>
+      </div>
+    </div>
+    <div class="col1" id="set1">
+      <div class="card">
+        <img src="../img/berserk.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Berserk - S1E10</h5>
+          <p class="card-text">Перегляд  на стрімі</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <style>
+    .col1 {
+  visibility: hidden;
+}
+  </style>
+  <script> 
+  var count = 0;
+  function Add()
+  {
+     if(count == 0) document.getElementById("set").style.visibility = "visible";
+     else
+     document.getElementById("set1").style.visibility = "visible";
+     ++count;
+  }
+  
+  </script>
+</body>
+
+</html>
