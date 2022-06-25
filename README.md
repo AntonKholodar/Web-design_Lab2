@@ -1,8 +1,8 @@
 # Web-design_Lab2
-Тема: «Розробка статичного інтерфейсу Web-додатка»
+Тема: «Розробка функціональності Web-додатка мовою Javascript»
 
 Виконав студент групи КВ-94 Холодар Антон Анатолійович
 
 [Посилання на документ звіту]
 
-https://docs.google.com/document/d/1RK4eP_hX5r6zTwx2OyG7FqoCW3M6NWvVFerGxfHdya8/edit?usp=sharing
+https://docs.google.com/document/d/13sRebA76ywG6ek1Kc7dQ_E6qPo_Yjze35llpixFHf9A/edit?usp=sharing
